@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="calculator">
+       <div class="screen">
+          <input type="text" id="inpbox"  placeholder="0">
+       </div>
+    <div class="key">
+        <div class="row">
+            <button type="button" onClick="calculate(1)">1</button>
+            <button type="button" onClick="calculate(2)">2</button>
+            <button type="button" onClick="calculate(3) ">3</button>
+            <button type="button" class="operation" onClick="calculate('+')">+</button>
+        </div>
+        <div class="row">
+            <button type="button" onClick="calculate(4) ">4</button>
+            <button type="button" onClick="calculate(5)">5</button>
+            <button type="button" onClick="calculate(6) ">6</button>
+            <button type="button" class="operation" onClick="calculate('-')">-</button>
+        </div>
+        <div class="row">
+            <button type="button" onClick="calculate(7)">7</button>
+            <button type="button" onClick="calculate(8)">8</button>
+            <button type="button" onClick="calculate(9)">9</button>
+            <button type="button" class="operation" onClick="calculate('*') ">*</button>
+        </div>
+        <div class="row">
+            <button type="button" onClick="calculate(0)">0</button>
+            <button type="button" onClick="calculate('.')">.</button>
+            <button type="button" id="eqButton" onClick="Equal()">=</button>
+            <button type="button" class="operation" onClick="calculate('/')">/</button>
+
+        </div>
+        <div class="row">
+            <button type="button" onClick="ClearAll()">CA</button>
+            <button type="button" onClick="ClearEntry()">CE</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
